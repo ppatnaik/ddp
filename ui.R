@@ -15,7 +15,9 @@ shinyUI(fluidPage(
       radioButtons("radio", label = h4("Select Predictor Model"),
                    choices = list("Model 1: hp" = 1, "Model 2: hp + wt" = 2,
                                   "Model 3: hp + wt + am" = 3), selected = 1),
-      actionButton("goButton", "Go!" )
+      actionButton("goButton", "Go!" ),
+      p(),
+      a(href="https://github.com/ppatnaik/ddp", "Link to Github Repo")
     ),
     
     # Show a plot of the generated distribution
